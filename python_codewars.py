@@ -51,3 +51,24 @@
 
 # print(postive_sum([1,2,3,4,5]))
 
+#Opposite Number
+#given a number, find it's positive
+# def oppositve(number):
+#     return number * -1
+
+
+# Your goal is to create a function that removes the first and last characters of a string. 
+# You're given one parameter, the original string. 
+# You don't have to worry with strings with less than two characters.
+# def remove_char(s):
+    #split the string up and then pop, lock and concatonate 
+    # x = list(s)
+    # x.pop(0)
+    # x.pop(len(x)-1)
+    # return ''.join(x)
+
+    #below is the best way to go about it using slice notion
+# def remove_char(s):
+#     return s[1:-1]
+
+# print(remove_char('too'))
