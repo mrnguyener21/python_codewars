@@ -72,3 +72,12 @@
 #     return s[1:-1]
 
 # print(remove_char('too'))
+
+
+#return negative
+#return the given number negative. If it is already negative than just turn it
+def make_negative( number ):
+    if number > 0:
+        return number * -1;
+    else:
+        return number;
