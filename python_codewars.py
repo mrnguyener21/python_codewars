@@ -76,8 +76,30 @@
 
 #return negative
 #return the given number negative. If it is already negative than just turn it
-def make_negative( number ):
-    if number > 0:
-        return number * -1;
-    else:
-        return number;
+# def make_negative( number ):
+#     if number > 0:
+#         return number * -1;
+#     else:
+#         return number;
+
+
+#string repeat
+# Write a function called repeat_str which repeats the given string src exactly count times.
+
+# repeatStr(6, "I") // "IIIIII"
+# repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+# def repeat_str(repeat, string):
+    #below was my solution
+    # x= []
+    # r = repeat
+    # while r > 0:
+    #     # print(r)
+    #     x.append(string)
+    #     r =r - 1
+    # return ''.join(x)
+# repeat_str(2,'hello')
+    #below is best practice
+#     return repeat * string
+# print(repeat_str(2,'hello'))   
+# print('hello')
