@@ -122,3 +122,20 @@
     # return x.replace(' ','')
 # no_space('a b c ')
 # print(no_space('a b c '))
+
+#reversed sstrings
+#complete the solution so that it reverses the  string passed into it
+# def solution(string):
+    #below is my code
+    # x = list(string)
+    # y = len(x)
+    # z = [];
+    # while y > 0:
+    #     z.append(x[y - 1])
+    #     y = y-1
+    # return ''.join(z)
+
+    #below is best practice
+    # return string[::-1]
+
+# print(solution('world'))
