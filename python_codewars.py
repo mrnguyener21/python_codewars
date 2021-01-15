@@ -103,3 +103,22 @@
 #     return repeat * string
 # print(repeat_str(2,'hello'))   
 # print('hello')
+
+
+#Remove String Spaces
+#remove the spaces from the string, then return the resultant string
+# def no_space(x):
+    #below is my code
+    # split = list(x);
+    # y = [];
+
+    # for character in split:
+    #     if character != ' ':
+    #         y.append(character);
+            
+    # return ''.join(y);
+
+    #below is best practice
+    # return x.replace(' ','')
+# no_space('a b c ')
+# print(no_space('a b c '))
