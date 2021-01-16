@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@mrnguyener21 
+mrnguyener21
+/
+python_codewars
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+python_codewars/python_codewars.py /
+
+Victor Nguyen completed vowel count
+Latest commit 555e653 8 hours ago
+ History
+ 1 contributor
+198 lines (143 sloc)  4.63 KB
+  
 # EVEN OR ODD
 #Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 # def even_or_odd(number):
@@ -139,3 +170,59 @@
     # return string[::-1]
 
 # print(solution('world'))
+
+
+
+#find the smallest integer
+# Given an array of integers your solution should find the smallest integer.
+
+# For example:
+
+# Given [34, 15, 88, 2] your solution will return 2
+# Given [34, -345, -1, 100] your solution will return -345
+# You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+# def find_smallest_int(arr):
+
+    #below is my code
+    # x = sorted(arr)
+    # return x[0]
+
+    #below is best practice
+    # return min(arr)
+    
+
+# find_smallest_int([78, 56, 232, 12, 11, 43])
+# print(find_smallest_int([78, 56, 232, 12, 11, -43]))
+
+
+#Convert boolean values to strings 'Yes' or 'No'.
+# Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+# def bool_to_word(boolean):
+#     if boolean == True:
+#         return 'Yes';
+#     elif boolean == False:
+#         return 'No';
+
+
+
+#vowel count
+# Return the number (count) of vowels in the given string.
+
+# We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+# The input string will only consist of lower case letters and/or spaces.
+
+# def get_coun(input_str):
+    # below is my code
+    # x = list(input_str)
+    # z = []
+    # for y in x:
+        # if y == 'a' or y =='e' or y== 'i'or y== 'u' or y== 'o':
+            # z.append(y)
+    # return len(z);
+
+    # below is best practice
+    # return sum(1 for let in input_str if let in "aeiouAEIOU")
+# print(get_coun('abracadabra'))
+
