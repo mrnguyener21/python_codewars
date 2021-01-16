@@ -195,6 +195,18 @@
     # return sum(1 for let in input_str if let in "aeiouAEIOU")
 # print(get_coun('abracadabra'))
 
+#mumbling
+# This time no story, no theory. The examples below show you how to write function accum:
 
- 
+# Examples:
 
+# accum("abcd") -> "A-Bb-Ccc-Dddd"
+# accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# accum("cwAt") -> "C-Ww-Aaa-Tttt"
+#first letter repeats once, second letter repeats twice, third letter repeats 3x's etc
+#first lettter of the iteration has to be capital, so A-Bb-Ccc-Ddd
+
+# def accum(s):
+    # return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+# accum('abcd')
+# print(accum('abcd'))
