@@ -210,3 +210,26 @@
     # return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
 # accum('abcd')
 # print(accum('abcd'))
+
+#highest and lowest
+#in this assignment you are given a string of sspace separated numbers and have to return the highest and lowest number.add()
+# high_and_low("1 2 3 4 5")  # return "5 1"
+# high_and_low("1 2 -3 4 5") # return "5 -3"
+# high_and_low("1 9 3 4 -5") # return "9 -5"
+
+#im gonna need to remove the spaces in between
+def high_and_low(numbers):
+    # below is my code
+    # x = numbers.split( )
+    # z = []
+    # for y in x:
+    #     z.append(int(y))
+    # z = sorted(z)
+    # return str(z[len(z)-1]) + ' '+ str(z[0]);
+
+    #below is best practice
+    nn = [int(s) for s in numbers.split(" ")]
+    return "{} {}".format(max(nn),min(nn))
+
+# high_and_low('12 2 3 4 5')
+# print(high_and_low('1 2 -3 4 5'))
