@@ -314,3 +314,20 @@
 
 # print(disemvowel("This website is for losers LOL!"))
 # disemvowel("This website is for losers LOL!")
+
+#Descending Order
+#make a function that can take any non-negative integer as an argument and return it with its digits in descending order.
+#aka rearrange the numbers from highest to lowest
+# def descending_order(num):
+#     x = list(str(num));
+#     y = [];
+
+#     for number in x:
+#         y.append(int(number))
+
+#     y = sorted(y,reverse=True)
+    
+#     return int(''.join(str(z) for z in y))
+
+
+# descending_order(42145)
