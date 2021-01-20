@@ -288,3 +288,29 @@
     
 # print(square_digits(9119))
 
+#disemvowel trolls
+# Trolls are attacking your comment section!
+
+# A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+# Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+# For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+# Note: for this kata y isn't considered a vowel.
+# def disemvowel(string):
+    # x = list(string)
+    # y = '';
+
+    # for letter in x:
+    #     # if letter.lower() != 'a' and letter.lower() != 'e' and letter.lower() != 'i' and letter.lower() != 'o' and letter.lower() != 'u':
+    #     #python has a not in operator so i dont have to keep using and operator a bunch of times
+    #     if letter.lower() not in 'aeiou':
+    #         y +=letter;
+    
+    # return(y)
+    #apparently in python I could also loop through a string so I don't have to turn it into a list
+    # return "".join(c for c in string if c.lower() not in "aeiou")
+
+# print(disemvowel("This website is for losers LOL!"))
+# disemvowel("This website is for losers LOL!")
