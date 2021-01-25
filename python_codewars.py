@@ -329,7 +329,3 @@
     # print(y)
     
     # return int(''.join(str(z) for z in y))
-
-
-# descending_order(42145)
-

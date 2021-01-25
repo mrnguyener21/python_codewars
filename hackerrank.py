@@ -34,12 +34,93 @@
 
 # 1990 is not a multiple of 4 hence it's not a leap year.
 
-def is_leap(year):
-    leap = False
-    if year%4 == 0 and year%100 != 0 and year%400 == 0:
-        leap = True
-    # Write your logic here
+# def is_leap(year):
+#     leap = False
     
-    return leap
+#     if year%4 == 0:
+#         if year%100 != 0:
+#             leap = True
+#         else:
+#             if year%400 == 0:
+#                 leap = True
 
-print(is_leap(1990))
+#     # Write your logic here
+    
+#     return leap
+
+# print(is_leap(1990))
+
+# The included code stub will read an integer, , from STDIN.
+
+# Without using any string methods, try to print the following:
+
+
+# Note that "" represents the consecutive values in between.
+
+# Example
+
+# Print the string .
+
+# Input Format
+
+# The first line contains an integer .
+
+# Constraints
+
+
+# Output Format
+
+# Print the list of integers from  through  as a string, without spaces.
+
+# Sample Input 0
+
+# 3
+# Sample Output 0
+
+# 123
+
+
+# THE MINION GAME
+# Kevin and Stuart want to play the 'The Minion Game'.
+
+# Game Rules
+
+# Both players are given the same string, .
+# Both players have to make substrings using the letters of the string .
+# Stuart has to make words starting with consonants.
+# Kevin has to make words starting with vowels.
+# The game ends when both players have made all possible substrings.
+
+# Scoring
+# A player gets +1 point for each occurrence of the substring in the string .
+
+# For Example:
+# String  = BANANA
+# Kevin's vowel beginning word = ANA
+# Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
+#THERE ARE NO DUPLICATES SO we only add the substring to the array if that substring is not already in the array
+
+# def minion_game(string):
+#     # your code goes here
+#     x = string
+#     kevin = 0
+#     stuart = 0
+#     vowels = ['A', 'E', 'I', 'O', 'U']
+
+#     for i , j in enumerate(x):
+#         if j in vowels:
+#             stuart += len(x)-i
+#         else:
+#             kevin += len(x)-i
+#         print(i,len(x))
+
+#     if kevin == stuart:
+#         print('Draw')
+#     elif kevin > stuart:
+#         print('Kevin {}'.format(kevin))
+#     else:
+#         print('Stuart {}'.format(stuart))
+
+
+# minion_game('BANANA')
+# print(minion_game('BANANA'))
