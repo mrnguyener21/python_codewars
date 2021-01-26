@@ -100,26 +100,26 @@
 # Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
 #THERE ARE NO DUPLICATES SO we only add the substring to the array if that substring is not already in the array
 
-def minion_game(string):
-    # your code goes here
-    x = string
-    kevin = 0
-    stuart = 0
-    vowels = ['A', 'E', 'I', 'O', 'U']
+# def minion_game(string):
+#     # your code goes here
+#     x = string
+#     kevin = 0
+#     stuart = 0
+#     vowels = ['A', 'E', 'I', 'O', 'U']
 
-    for i , j in enumerate(x):
-        if j in vowels:
-            stuart += len(x)-i
-        else:
-            kevin += len(x)-i
+#     for i , j in enumerate(x):
+#         if j in vowels:
+#             stuart += len(x)-i
+#         else:
+#             kevin += len(x)-i
             
-    if kevin == stuart:
-        print('Draw')
-    elif kevin > stuart:
-        print('Kevin {}'.format(kevin))
-    else:
-        print('Stuart {}'.format(stuart))
+#     if kevin == stuart:
+#         print('Draw')
+#     elif kevin > stuart:
+#         print('Kevin {}'.format(kevin))
+#     else:
+#         print('Stuart {}'.format(stuart))
 
 
-minion_game('BANANA')
+# minion_game('BANANA')
 # print(minion_game('BANANA'))
