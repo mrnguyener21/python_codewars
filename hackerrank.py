@@ -131,14 +131,36 @@
 #     if n is even and in the inclusive range of 6 to 20, print 'Weird'
 #     if n is even and greater than 20, print ' not weird'
 
-    if n%2 != 0:
-        print('Weird')
+    # if n%2 != 0:
+    #     print('Weird')
+    # else:
+    #     if n >= 2 and n <= 5:
+    #         print('Not Weird')
+    #     elif n >= 6 and n <= 20:
+    #         print('Weird')
+    #     elif n >20:
+    #         print('Not Weird')
+
+
+#The Minion Game
+def minion_game(string):
+    Kevin = 0;
+    Stuart = 0;
+    x = string;
+    vowels = ['A','E','I','O','U']
+
+    for i, j in enumerate(x): 
+        if j in vowels:
+            Kevin += (len(x) - i);
+        else:
+            Stuart += (len(x) - i)
+    if  Kevin > Stuart:
+
+        print('Kevin {}'.format(Kevin));
+    elif Stuart > Kevin:
+        print('Stuart {}'.format(Stuart))
     else:
-        if n >= 2 and n <= 5:
-            print('Not Weird')
-        elif n >= 6 and n <= 20:
-            print('Weird')
-        elif n >20:
-            print('Not Weird')
+        print('Draw') 
+minion_game('BANANA')
 
 
