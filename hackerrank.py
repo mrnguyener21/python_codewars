@@ -143,24 +143,34 @@
 
 
 #The Minion Game
-def minion_game(string):
-    Kevin = 0;
-    Stuart = 0;
-    x = string;
-    vowels = ['A','E','I','O','U']
+# def minion_game(string):
+#     Kevin = 0;
+#     Stuart = 0;
+#     x = string;
+#     vowels = ['A','E','I','O','U']
 
-    for i, j in enumerate(x): 
-        if j in vowels:
-            Kevin += (len(x) - i);
-        else:
-            Stuart += (len(x) - i)
-    if  Kevin > Stuart:
+#     for i, j in enumerate(x): 
+#         if j in vowels:
+#             Kevin += (len(x) - i);
+#         else:
+#             Stuart += (len(x) - i)
+#     if  Kevin > Stuart:
 
-        print('Kevin {}'.format(Kevin));
-    elif Stuart > Kevin:
-        print('Stuart {}'.format(Stuart))
-    else:
-        print('Draw') 
-minion_game('BANANA')
+#         print('Kevin {}'.format(Kevin));
+#     elif Stuart > Kevin:
+#         print('Stuart {}'.format(Stuart))
+#     else:
+#         print('Draw') 
+# minion_game('BANANA')
+
+
+#PYTHON: DIVISION
+from __future__ import division
+
+if __name__ == '__main__':
+    a = int(raw_input())
+    b = int(raw_input())
+    print(a//b);
+    print(a/b);
 
 
