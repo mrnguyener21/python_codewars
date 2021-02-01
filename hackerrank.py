@@ -191,3 +191,21 @@
 #     i = 0;
 #     for i in range(0,n):
 #         print(i*i)
+
+#RE.SPLIT()
+#you are given a string 's' consisting only of digits 0-9, commas, and dots.
+#your ask is to complete the regex_pattern defined below, which will be used to re.split() all of the , and . symbols in s.
+#it's guaranteed that every comma and every dot in s is preceeeded and followed by a digit.
+
+
+
+#FIND THE RUNNER - UP SCORE!
+#Given the paricipants' score sheet for your university sports day, you are required to find the runner up score. you are given n scores. store them in a list and find the score of the runner up.
+
+# if __name__ == '__main__':
+#     n = int(raw_input())
+#     arr = map(int, raw_input().split())
+#     x = list(arr)
+#     y = sorted(set(x))
+#     print(y[len(y)-2])
+
