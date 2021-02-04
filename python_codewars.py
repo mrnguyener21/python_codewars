@@ -329,3 +329,11 @@
     # print(y)
     
     # return int(''.join(str(z) for z in y))
+
+
+
+#LIST COMPREHENSION
+# something for this thing in 'string'
+# i = x j = y
+
+print([x for x in range(10)])
